@@ -1,23 +1,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+  
    <!-- 公司或者组织的唯一标志，并且配置时生成的路径也是由此生成， 
    	如com.companyname.project-group，
    	maven会将该项目打成的jar包放本地路径：/com/companyname/project-group -->
-  <groupId>com.autotest.kiki</groupId>
+  <groupId>com.autotest</groupId>
   <!-- 项目的唯一ID，一个groupId下面可能多个项目，就是靠artifactId来区分的 -->
   <artifactId>AutoTestFramework</artifactId>
   <!--项目产生的构件类型，例如jar、war、ear、pom。插件可以创建他们自己的构件类型，所以前面列的不是全部构件类型 -->
   <packaging>jar</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <!-- 模型版本 -->
-  <!-- <modelVersion>4.0.0</modelVersion>  -->
+  <modelVersion>4.0.0</modelVersion> 
   
   <properties>
      <java.version>1.8</java.version>
  	 <project.bulid.sourceEncoding>UTF-8</project.bulid.sourceEncoding>
   </properties>
   
-  <!--该元素描述了项目相关的所有依赖。 这些依赖组成了项目构建过程中的一个个环节。它们自动从项目定义的仓库中下载。要获取更多信息，请看项目依赖机制。 -->
+  <!--该元素描述了项目相关的所有依赖。 这些依赖组成了项目构建过程中的一个个环节，它们自动从项目定义的仓库中下载。要获取更多信息，请看项目依赖机制。 -->
   <dependencies>
 	  <dependency>
 	      <groupId>org.apache.httpcomponents</groupId>
